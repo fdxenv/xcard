@@ -17,6 +17,19 @@
     <maven.compiler.source>1.7</maven.compiler.source>
     <maven.compiler.target>1.7</maven.compiler.target>
   </properties>
+  <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>xcard-releases</id>
+      <url>http://ec2-52-42-194-170.us-west-2.compute.amazonaws.com:8081/nexus/content/repositories/xcard-releases</url>
+    </repository>
+    <snapshotRepository>
+      <uniqueVersion>true</uniqueVersion>
+      <id>xcard-snapshots</id>
+      <url>http://ec2-52-42-194-170.us-west-2.compute.amazonaws.com:8081/nexus/content/repositories/xcard-snapshots</url>
+  </snapshotRepository>
+</distributionManagement>
+
 
   <dependencies>
     <dependency>
